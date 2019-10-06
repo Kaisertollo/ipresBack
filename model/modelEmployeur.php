@@ -8,7 +8,13 @@ function getEmployeurByIdDonnee($idDonnee)
 }
 function getAllEmployeur($adresse)
 {
-    $sql = "SELECT nomEtrp,caisseID,ipresID,adresse,id from employeur WHERE adresse = '$adresse' ORDER BY id ASC LIMIT 500 OFFSET 2500";
+    $sql = "SELECT nomEtrp,caisseID,ipresID,profil,adresse,id from employeur WHERE adresse = '$adresse' ORDER BY id ASC";
+    global $bd;
+    return $bd -> query($sql) -> fetchAll();
+}
+function getEmployeurByFiltre($adresse,$filtre)
+{
+    $sql = "SELECT nomEtrp,caisseID,ipresID,profil,adresse,id from employeur WHERE adresse = '$adresse' and profil='$filtre' ORDER BY id ASC";
     global $bd;
     return $bd -> query($sql) -> fetchAll();
 }
