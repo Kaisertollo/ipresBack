@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="asset/css/animate.css">
   <link rel="stylesheet" href="asset/css/font-awesome.min.css">
   <link href="asset/css/style.css" rel="stylesheet">
-<!-- DataTables
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">  -->
-  <!-- DataTables-->
-  <link rel="stylesheet" href="asset/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+<!-- DataTables-->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+  <!-- DataTables
+  <link rel="stylesheet" href="asset/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">-->
 </head>
 
 <body>
@@ -92,11 +92,11 @@
   <script src="asset/js/jquery-2.1.1.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="asset/js/bootstrap.min.js"></script>
-  <!-- DataTables -->
+  <!-- DataTables 
 <script src="asset/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="asset/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-<!-- Bootstrap 3.3.7 
- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script> -->
+<script src="asset/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>-->
+<!-- Bootstrap 3.3.7 -->
+ <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script> 
 
 
   <script src="asset/js/responsive-slider.js"></script>
