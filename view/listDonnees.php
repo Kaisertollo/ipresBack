@@ -43,7 +43,7 @@
       </div>
     </div>
   </header>
-  <h1 id="title"></h1>
+  <h1 id='title'></h1> 
   <div class="container">
       <table class="table" id="example1">
         <thead>
@@ -51,7 +51,7 @@
       </thead>
 	  </table>
   </div>
-	<?php echo "<div id='id'>".$_GET['id']."</div>" ;?>
+	<?php echo "<div id='id' style='display:none;'>".$_GET['id']."</div>" ;?>
   <!--start footer-->
   <footer>
     
