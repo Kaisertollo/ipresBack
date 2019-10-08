@@ -8,15 +8,15 @@
   <title>IPRES Bootstrap Template</title>
 
   <!-- Bootstrap -->
-  <link href="asset/css/bootstrap.min.css" rel="stylesheet">
-  <link href="asset/css/responsive-slider.css" rel="stylesheet">
-  <link rel="stylesheet" href="asset/css/animate.css">
-  <link rel="stylesheet" href="asset/css/font-awesome.min.css">
-  <link href="asset/css/style.css" rel="stylesheet">
+  <link href="/ipres/view/asset/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/ipres/view/asset/css/responsive-slider.css" rel="stylesheet">
+  <link rel="stylesheet" href="/ipres/view/asset/css/animate.css">
+  <link rel="stylesheet" href="/ipres/view/asset/css/font-awesome.min.css">
+  <link href="/ipres/view/asset/css/style.css" rel="stylesheet">
 <!-- DataTables-->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
-  <!-- DataTables-->
-  <link rel="stylesheet" href="asset/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <!-- DataTables
+  <link rel="stylesheet" href="/ipres/view/asset/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">-->
 </head>
 
 <body>
@@ -83,9 +83,9 @@
   <!--end footer-->
 
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="asset/js/jquery-2.1.1.min.js"></script>
+  <script src="/ipres/view/asset/js/jquery-2.1.1.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="asset/js/bootstrap.min.js"></script>
+  <script src="/ipres/view/asset/js/bootstrap.min.js"></script>
   <!-- DataTables 
 <script src="asset/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="asset/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>-->
@@ -93,9 +93,9 @@
  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script> 
 
 
-  <script src="asset/js/responsive-slider.js"></script>
-  <script src="asset/js/wow.min.js"></script>
-  <script src="asset/js/DataPage.js"></script>
+  <script src="/ipres/view/asset/js/responsive-slider.js"></script>
+  <script src="/ipres/view/asset/js/wow.min.js"></script>
+  <script src="/ipres/view/asset/js/DataPage.js"></script>
 <script>
 	getData(document.getElementById("id").innerHTML);
 </script>

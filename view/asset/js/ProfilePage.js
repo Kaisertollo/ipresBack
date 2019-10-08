@@ -14,7 +14,7 @@ function fillTable(data)
                 { title: "Profil",},
                 { title: "Données",data:'id',"render":function ( data, type, row, meta ) 
                   {
-                    return "<button type='button' class='btn btn-danger'><a style='color:inherit;' href='listDonnees.php?id="+data+"'>Voir Données</a></button>";
+                    return "<button type='button' class='btn btn-danger'><a style='color:inherit;' href='donnees/employeurs/"+data+"'>Voir Données</a></button>";
                   } 
                 }
               ],

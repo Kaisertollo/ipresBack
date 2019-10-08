@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^employeurs$  view/listEmployeurs.php
+RewriteRule ^accueil$  view/accueil.php
+RewriteRule ^donnees/employeurs/([0-9]+)  view/listDonnees.php?id=$1

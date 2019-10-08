@@ -43,9 +43,17 @@ function getData(id)
   var request = new XMLHttpRequest();
   request.onload = function()
 {
-  let data = JSON.parse(this.responseText);
-  fillTable(data);
-  console.log(data[0]);
+  if(this.status == 200)
+  {
+    let data = JSON.parse(this.responseText);
+    fillTable(data);
+    console.log(data[0]);
+  }
+  else
+  {
+    console.log(this.status);
+  }
+  
 }
   request.open('GET', 'http://localhost/ipres/view/index.php?view=donnee&id='+id, true);  
   request.send();

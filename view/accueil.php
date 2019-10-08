@@ -8,11 +8,11 @@
   <title>IPRES Bootstrap Template</title>
 
   <!-- Bootstrap -->
-  <link href="asset/css/bootstrap.min.css" rel="stylesheet">
-  <link href="asset/css/responsive-slider.css" rel="stylesheet">
-  <link rel="stylesheet" href="asset/css/animate.css">
-  <link rel="stylesheet" href="asset/css/font-awesome.min.css">
-  <link href="asset/css/style.css" rel="stylesheet">
+  <link href="/ipres/view/asset/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/ipres/view/asset/css/responsive-slider.css" rel="stylesheet">
+  <link rel="stylesheet" href="/ipres/view/asset/css/animate.css">
+  <link rel="stylesheet" href="/ipres/view/asset/css/font-awesome.min.css">
+  <link href="/ipres/view/asset/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -29,8 +29,8 @@
             </div>
             <div class="menu">
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="accueil.php">Accueil</a></li>
-                <li role="presentation"><a href="listEmployeurs.php">Employeurs</a></li>
+                <li role="presentation" class="active"><a href="accueil">Accueil</a></li>
+                <li role="presentation"><a href="employeurs">Employeurs</a></li>
                 <li role="presentation"><a href="blog.html">Employée</a></li>
 
               </ul>
@@ -53,7 +53,7 @@
 
         <div class="carousel-inner">
           <div class="item active">
-            <img src="asset/img/slide1.jpg" class="img-responsive" alt="">
+            <img src="/ipres/view/asset/img/slide1.jpg" class="img-responsive" alt="">
             <div class="carousel-caption">
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
                 <h2><span>Bienvenu dans Ipres</span></h2>
@@ -69,7 +69,7 @@
           </div>
 
           <div class="item">
-            <img src="asset/img/slide2.jpg" class="img-responsive" alt="">
+            <img src="/ipres/view/asset/img/slide2.jpg" class="img-responsive" alt="">
             <div class="carousel-caption">
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">
                 <h2>IPRES Sénégal</h2>
@@ -144,11 +144,11 @@
   <!--end footer-->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="asset/js/jquery-2.1.1.min.js"></script>
+  <script src="/ipres/view/asset/js/jquery-2.1.1.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="asset/js/bootstrap.min.js"></script>
-  <script src="asset/js/responsive-slider.js"></script>
-  <script src="asset/js/wow.min.js"></script>
+  <script src="/ipres/view/asset/js/bootstrap.min.js"></script>
+  <script src="/ipres/view/asset/js/responsive-slider.js"></script>
+  <script src="/ipres/view/asset/js/wow.min.js"></script>
   <script>
     wow = new WOW({}).init();
   </script>

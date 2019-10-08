@@ -23,3 +23,4 @@ for rows in result:
             stm = donnees.update().where(donnees.c.id == rows[0]).values(anomalie=3)  
             conn.execute(stm)
 
+#RewriteRule employeurs/ view/listEmployeurs.php
