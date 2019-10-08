@@ -16,7 +16,7 @@
 <!-- DataTables-->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"> 
   <!-- DataTables-->
-  <link rel="stylesheet" href="asset/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">-->
+  <link rel="stylesheet" href="asset/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
           <div class="container-fluid">
             <div class="navbar-header">
               <div class="navbar-brand">
-                <a href="index.html"><h1>IPRES</h1></a>
+                <a href="#"><h1>IPRES</h1></a>
               </div>
             </div>
             <div class="menu">
@@ -108,10 +108,10 @@
                 <!--
                   All the links in the footer should remain intact. 
                   You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=IPRES
+                  Licensing information: https://.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://.com/buy/?theme=IPRES
                 -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="#">D-D-S</a>
               </div>
             </div>
           </div>

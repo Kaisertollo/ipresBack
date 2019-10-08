@@ -15,8 +15,8 @@
   <link href="asset/css/style.css" rel="stylesheet">
 <!-- DataTables-->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
-  <!-- DataTables
-  <link rel="stylesheet" href="asset/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">-->
+  <!-- DataTables-->
+  <link rel="stylesheet" href="asset/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
           <div class="container-fluid">
             <div class="navbar-header">
               <div class="navbar-brand">
-                <a href="index.html"><h1>IPRES</h1></a>
+                <a href="#"><h1>IPRES</h1></a>
               </div>
             </div>
             <div class="menu">
@@ -43,7 +43,7 @@
       </div>
     </div>
   </header>
-  <h1 id='title'></h1> 
+  <h1 id="title"></h1>
   <div class="container">
       <table class="table" id="example1">
         <thead>
@@ -51,7 +51,7 @@
       </thead>
 	  </table>
   </div>
-	<?php echo "<div id='id' style='display:none;'>".$_GET['id']."</div>" ;?>
+	<?php echo "<div id='id'>".$_GET['id']."</div>" ;?>
   <!--start footer-->
   <footer>
     
@@ -72,13 +72,7 @@
             <div class="copyright">
               <p>&copy;IPRES Theme - All right reserved.</p>
               <div class="credits">
-                <!--
-                  All the links in the footer should remain intact. 
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=IPRES
-                -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="#">D-D-S</a>
               </div>
             </div>
           </div>

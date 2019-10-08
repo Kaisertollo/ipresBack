@@ -22,6 +22,20 @@ body {
 	color:#000;
 	background-color:#fff;
 }
+p[id="lettre"]{
+	font-family:'Open Sans', Arial, sans-serif;
+	font-size:25px;
+	font-weight:300;
+	line-height:1.6em;
+	color:#000;
+	background-color:#f9f9f9;
+}
+a[id="lire-suite"]{
+	color: rgb(29, 108, 133);
+	text-decoration: underline;
+	font-weight: normal;
+	font-size: 20px;
+}
 
 hi,h2,h3,h4,h5,h6 {
 	color:#000;
@@ -198,6 +212,14 @@ a:hover {
 
 .carousel-caption  p {
 	font-size:30px;
+	margin-top:30px;
+	margin-bottom:20px;
+	color:#fff;
+	padding:10px;
+	background:#bf1515;
+}
+.carousel-caption  p[id="slogan"] {
+	font-size:20px;
 	margin-top:30px;
 	margin-bottom:20px;
 	color:#fff;
