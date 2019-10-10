@@ -1,3 +1,10 @@
+<?php
+session_start();
+if ($_SESSION != null)
+{
+	header("location:/ipres/view");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

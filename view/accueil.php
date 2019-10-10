@@ -29,8 +29,8 @@
             </div>
             <div class="menu">
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="accueil">Accueil</a></li>
-                <li role="presentation"><a href="employeurs">Employeurs</a></li>
+                <li role="presentation" class="active"><a href="/ipres/accueil">Accueil</a></li>
+                <li role="presentation"><a href="/ipres/employeurs">Employeurs</a></li>
                 <li role="presentation"><a href="blog.html">Employée</a></li>
 
               </ul>
