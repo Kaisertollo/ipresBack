@@ -55,7 +55,7 @@ function getData(id)
   }
   
 }
-  request.open('GET', 'http://localhost/ipres/view/index.php?view=donnee&id='+id, true);  
+  request.open('GET', 'http://localhost/ipres/json/donnee/showByID/'+id, true);  
   request.send();
 }
 

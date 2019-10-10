@@ -14,7 +14,7 @@ function fillTable(data)
                 { title: "Profil",},
                 { title: "Données",data:'id',"render":function ( data, type, row, meta ) 
                   {
-                    return "<button type='button' class='btn btn-danger'><a style='color:inherit;' href='donnees/employeurs/"+data+"'>Voir Données</a></button>";
+                    return "<button type='button' class='btn btn-danger'><a style='color:inherit;' href='/ipres/employeurs/donnees/"+data+"'>Voir Données</a></button>";
                   } 
                 }
               ],
@@ -44,9 +44,8 @@ function cleanTable()
 function getEmployeur(agence,filtre="")
 {
   var request = new XMLHttpRequest()
-  let url = filtre===''?
-  'http://localhost/ipres/view/index.php?view=selection&adresse='+agence
-  :'http://localhost/ipres/view/index.php?view=selection&adresse='+agence+'&filtre='+filtre
+  let url ="/ipres/json/employeur/show/"+agence+"_"+filtre;
+  
   request.onload = function()
   {
     if(this.status == 200)

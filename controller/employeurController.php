@@ -1,23 +1,35 @@
 <?php
 require_once '../model/modelEmployeur.php';
 require_once '../model/modelUser.php';
-if (isset($_GET['nomEtrp'])) {
-    $client = getEmployeurByNomEtrp($_GET['nomEtrp']);
-    if ($client == null){
-        header('location:/ipres/view/indexIpres.php?view=rechEtrp&trouve=0');
-    }else{
-        $_SESSION['client'] = $client;
-        header('location:/ipres/view/indexIpres.php?view=rechEtrp&trouve=1');
+if (isset($_GET['methods']))
+{
+    extract($_GET);
+    switch ($methods) 
+    {
+        case "show":
+            echo show($args);
+            break;
+        default:
+            echo "Your favorite color is neither red, blue, nor green!";
     }
 }
-if ($_POST['ajoutEtrp']) {
-    extract($_POST);
-    if (insererEmployeur($nomEtrp, $adresse, $profil) > 0 && insererUser($nomEtrp, $login, $mdp, $profil) > 0){
-        header('location:/ipres/view/indexIpres.php?view=employeur&ok=1');
+//ipres/controller/employeurController.php?methods=list&args=
+//JSON/employeurs/list/Agence
+function show($args)
+{
+    $args = explode("_",$args);
+    if($args[1]=='')
+    {
+        $employeurs = getAllEmployeur($args[0]);
+        return json_encode($employeurs);
     }
     else
     {
-        header('location:/ipres/view/indexIpres.php?view=employeur&ok=0');
+        $employeurs = getEmployeurByFiltre($args[0],$args[1]);
+        return json_encode($employeurs);
     }
+
+    
 }
+
 ?>

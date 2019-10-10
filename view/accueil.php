@@ -1,45 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IPRES Bootstrap Template</title>
-
-  <!-- Bootstrap -->
-  <link href="/ipres/view/asset/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/ipres/view/asset/css/responsive-slider.css" rel="stylesheet">
-  <link rel="stylesheet" href="/ipres/view/asset/css/animate.css">
-  <link rel="stylesheet" href="/ipres/view/asset/css/font-awesome.min.css">
-  <link href="/ipres/view/asset/css/style.css" rel="stylesheet">
-
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="row">
-        <nav class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <div class="navbar-brand">
-                <a href="#"><h1>IPRES</h1></a>
-              </div>
-            </div>
-            <div class="menu">
-              <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="/ipres/accueil">Accueil</a></li>
-                <li role="presentation"><a href="/ipres/employeurs">Employeurs</a></li>
-                <li role="presentation"><a href="blog.html">Employée</a></li>
-
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
+<?php include 'header.php'?>
 
   <div class="slider">
     <div id="about-slider">
@@ -113,46 +72,10 @@
   </div>
   <hr>
 
-  <!--start footer-->
-  <footer>
-
-    <div class="sub-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="social-network">
-              <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
-              <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
-              <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
-              <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
-              <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-lg-12">
-            <div class="copyright">
-              <p>&copy;IPRES Theme - All right reserved.</p>
-              <div class="credits">
-                Designed by <a href="#">D-D-S</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--end footer-->
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="/ipres/view/asset/js/jquery-2.1.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="/ipres/view/asset/js/bootstrap.min.js"></script>
-  <script src="/ipres/view/asset/js/responsive-slider.js"></script>
-  <script src="/ipres/view/asset/js/wow.min.js"></script>
+  <?php include 'footer.php'?>
   <script>
     wow = new WOW({}).init();
   </script>
-
-</body>
+  </body>
 
 </html>

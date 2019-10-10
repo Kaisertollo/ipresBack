@@ -1,4 +1,5 @@
 RewriteEngine on
-RewriteRule ^employeurs$  view/listEmployeurs.php
+RewriteRule ^(\w+)/(\w+)/(\w*)$  view/$1/$2.php?args=$3
 RewriteRule ^accueil$  view/accueil.php
-RewriteRule ^donnees/employeurs/([0-9]+)  view/listDonnees.php?id=$1
+RewriteRule ^json/(\w+)/([a-zA-Z]+)/(.+)$ controller/$1Controller.php?methods=$2&args=$3
+ 
