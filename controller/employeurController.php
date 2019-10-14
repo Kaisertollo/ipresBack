@@ -8,13 +8,15 @@ if (isset($_GET['methods']))
     {
         case "show":
             echo show($args);
+        case "showById":
+             print_r(showByID($args));
             break;
         default:
             echo "Your favorite color is neither red, blue, nor green!";
     }
 }
-//ipres/controller/employeurController.php?methods=list&args=
-//JSON/employeurs/list/Agence
+
+//JSON/employeurs/show/arg1_arg2
 function show($args)
 {
     $args = explode("_",$args);
@@ -28,8 +30,11 @@ function show($args)
         $employeurs = getEmployeurByFiltre($args[0],$args[1]);
         return json_encode($employeurs);
     }
-
-    
+}
+//JSON/employeurs/showById/id
+function showById($id)
+{
+    return getIdEmployeurById($id);
 }
 
 ?>
