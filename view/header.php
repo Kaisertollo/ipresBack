@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +9,11 @@
   <title>IPRES Bootstrap Template</title>
 
   <!-- Bootstrap -->
-  <link href="/ipres/view/asset/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/ipres/view/asset/css/responsive-slider.css" rel="stylesheet">
-  <link rel="stylesheet" href="/ipres/view/asset/css/animate.css">
-  <link rel="stylesheet" href="/ipres/view/asset/css/font-awesome.min.css">
-  <link href="/ipres/view/asset/css/style.css" rel="stylesheet">
+  <link href="/ipres/asset/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/ipres/asset/css/responsive-slider.css" rel="stylesheet">
+  <link rel="stylesheet" href="/ipres/asset/css/animate.css">
+  <link rel="stylesheet" href="/ipres/asset/css/font-awesome.min.css">
+  <link href="/ipres/asset/css/style.css" rel="stylesheet">
   <!-- DataTables-->
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"> 
   <!-- DataTables
@@ -36,7 +37,7 @@
                 <li role="presentation" class="active"><a href="/ipres/accueil">Accueil</a></li>
                 <li role="presentation"><a href="/ipres/employeurs/index/">Employeurs</a></li>
                 <li role="presentation"><a href="blog.html">Employée</a></li>
-
+                <li role="presentation"><a href='/ipres/dec.php'>Deconnexion</a></li>
               </ul>
             </div>
           </div>

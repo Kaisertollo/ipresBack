@@ -9,7 +9,7 @@ donnees = db.Table('donnees', metadata, autoload=True, autoload_with=engine)
 j = employeur.join(donnees, employeur.c.id == donnees.c.idEmployeur)
 result = conn.execute(donnees.select())
 
-'''for rows in result:
+for rows in result:
     if rows[2]<=0 and rows[4]==0:
         stm = donnees.update().where(donnees.c.id == rows[0]).values(anomalie=1)
         conn.execute(stm)
@@ -23,4 +23,3 @@ result = conn.execute(donnees.select())
         elif rows[2] != rows[4]:
             stm = donnees.update().where(donnees.c.id == rows[0]).values(anomalie=3)  
             conn.execute(stm)
-'''

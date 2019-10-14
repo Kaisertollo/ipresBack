@@ -25,7 +25,7 @@
 	</div>
 	<div class="form-group col-md-6">
       <select class="form-control" id="profil">
-          <option value="test">Tous</option>
+          <option value="">Tous</option>
           <option value="actif">Actif</option>
           <option value="semi-Actif">Semi-Actif</option>
           <option value="inactif">Inactif</option>
@@ -34,48 +34,21 @@
     </div>
   </div>
   <br/>
-  <div class="container">
+  <div class="container" id="extest">
       <table class="table" id="example1">
-        <thead>
-          <tr></tr>
-      </thead>
 	  </table>
   </div>
 
 
   <?php include '../footer.php'?>
-  <script src="/ipres/view/asset/js/ProfilePage.js"></script>
   <script>
-  
+  let employeurs = new Employeurs();
+
   const agence = document.getElementById("agence");
-  const profil = document.getElementById("profil");
-  
-  agence.addEventListener("change",changeAgence);
-  profil.addEventListener("change",changeProfil);
-  
-  //Callback function for updating the table 
-  //after a change event on the agence select element
-  function changeAgence()
-  {
-    cleanTable();
-    getEmployeur(agence.value,"");
-    profil.selectedIndex = 0;
-  }
-  
-  //Callback function for updating the table 
-  //after a change event on the profil select element
-  function changeProfil()
-  {
-    if(profil.value != "test")
-    {
-      cleanTable();
-      getEmployeur(agence.value,profil.value);
-    }
-  }
-  
-  //Load the table with the Company in the POINT E Agence
-  //function definiton on  ProfilePage.js
-  getEmployeur("POINT E","");
+  const profile = document.getElementById("profil");
+  agence.addEventListener("change",()=>employeurs.setAgence(agence.value));
+  profile.addEventListener("change",()=>employeurs.setProfile(profile.value));
+  employeurs.setAgence("POINT E");
   
   
 </script>

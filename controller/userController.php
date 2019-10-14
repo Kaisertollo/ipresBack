@@ -19,12 +19,7 @@ if (isset($_POST['connexion']))
     }
 
 }
-if (isset($_GET['deconnexion']))
-{
-    session_unset();
-    $_SESSION = array();
-    header('location:/ipres/index.php');
-}
+?>
 /*if ($_POST['ajoutUser']) {
     extract($_POST);
     if (insererUser($nom, $login, $mdp, $profil) > 0){
@@ -35,4 +30,4 @@ if (isset($_GET['deconnexion']))
         header('location:/ipres/view/indexIpres.php?view=utilisateur&ok=0');
     }
 }
-?>*/
+*/

@@ -9,9 +9,9 @@
   </div>
 	<?php echo "<div id='id' style='display:none;'>".$_GET['args']."</div>" ;?>
   <?php include '../footer.php'?>
-  <script src="/ipres/view/asset/js/DataPage.js"></script>
 <script>
-	getData(document.getElementById("id").innerHTML);
+  let donnees = new Donnees(document.getElementById("id").innerHTML);
+  setJSON(donnees);
 </script>
 
 

@@ -28,9 +28,9 @@
 </footer>
 <!--end footer-->
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
- <script src="/ipres/view/asset/js/jquery-2.1.1.min.js"></script>
+ <script src="/ipres/asset/js/jquery-2.1.1.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="/ipres/view/asset/js/bootstrap.min.js"></script>
+  <script src="/ipres/asset/js/bootstrap.min.js"></script>
   <!-- DataTables 
 <script src="asset/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="asset/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>-->
@@ -38,8 +38,11 @@
  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script> 
 
 
-  <script src="/ipres/view/asset/js/responsive-slider.js"></script>
-  <script src="/ipres/view/asset/js/wow.min.js"></script>
+  <script src="/ipres/asset/js/responsive-slider.js"></script>
+  <script src="/ipres/asset/js/wow.min.js"></script>
+  <script src="/ipres/view/js/function.js"></script>
+  <script src="/ipres/view/js/Donnees.js"></script>
+  <script src="/ipres/view/js/Employeurs.js"></script>
   
   
 
