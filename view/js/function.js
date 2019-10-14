@@ -15,6 +15,11 @@ function initTable(columns){
     
     return $('#example1').DataTable({
         columns: columns,
-        "pageLength": 25
+        'processing': true,
+        "pageLength": 25,
+        'language': {
+          'loadingRecords': '&nbsp;',
+          'processing': 'Loading...'
+      } 
     });
 }
