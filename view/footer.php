@@ -40,9 +40,8 @@
 
   <script src="/ipres/asset/js/responsive-slider.js"></script>
   <script src="/ipres/asset/js/wow.min.js"></script>
-  <script src="/ipres/view/js/function.js"></script>
-  <script src="/ipres/view/js/Donnees.js"></script>
-  <script src="/ipres/view/js/Employeurs.js"></script>
+  
+  
   
   
 

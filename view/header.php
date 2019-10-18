@@ -16,6 +16,8 @@
   <link href="/ipres/asset/css/style.css" rel="stylesheet">
   <!-- DataTables-->
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"> 
+  <!--W3CSS-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- DataTables
   <link rel="stylesheet" href="/ipres/view/asset/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">-->
 

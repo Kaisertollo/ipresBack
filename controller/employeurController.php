@@ -4,21 +4,25 @@ require_once '../model/modelUser.php';
 if (isset($_GET['methods']))
 {
     extract($_GET);
+    //extract($_POST);
     switch ($methods) 
     {
         case "show":
             echo show($args);
+            break;
         case "showById":
-             print_r(showByID($args));
+            echo showByID($args);
+            break;
+        case "edit":
+            echo edit(array_values($_POST));
             break;
         default:
-            echo "Your favorite color is neither red, blue, nor green!";
+            echo "eeesddsps";
     }
 }
 
 //JSON/employeurs/show/arg1_arg2
-function show($args)
-{
+function show($args){
     $args = explode("_",$args);
     if($args[1]=='')
     {
@@ -32,9 +36,11 @@ function show($args)
     }
 }
 //JSON/employeurs/showById/id
-function showById($id)
-{
-    return getIdEmployeurById($id);
+function showById($id){
+    return json_encode(getIdEmployeurById($id));
+}
+function edit($args){
+    return updateEmployeur($args);
 }
 
 ?>

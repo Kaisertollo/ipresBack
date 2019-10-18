@@ -41,17 +41,9 @@
 
 
   <?php include '../footer.php'?>
-  <script>
-  let employeurs = new Employeurs();
-
-  const agence = document.getElementById("agence");
-  const profile = document.getElementById("profil");
-  agence.addEventListener("change",()=>employeurs.setAgence(agence.value));
-  profile.addEventListener("change",()=>employeurs.setProfile(profile.value));
-  employeurs.setAgence("POINT E");
+  <?php include 'modalEdit.php'?>
+  <script src="/ipres/view/js/Employeurs.js" type="module"></script>
   
-  
-</script>
 
 
 </body>

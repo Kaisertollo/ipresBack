@@ -9,9 +9,11 @@
   </div>
 	<?php echo "<div id='id' style='display:none;'>".$_GET['args']."</div>" ;?>
   <?php include '../footer.php'?>
-<script>
+  <script src="/ipres/view/js/Donnees.js" type="module"></script>
+<script type="module">
+  /*import {Donnees} from '/ipres/view/js/Donnees.js';
   let donnees = new Donnees(document.getElementById("id").innerHTML);
-  setJSON(donnees);
+  donnees.getJSON();*/
 </script>
 
 
