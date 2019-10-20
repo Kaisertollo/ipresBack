@@ -6,13 +6,22 @@ window.closeM =function (){
   }
  window.openM = function (id){
     document.getElementById('id01').style.display='block'
-    editData = new EditData(id,"/ipres/json/employeur/showById/",
-    "/ipres/json/employeur/edit/",[],
-    ["caisseID","ipresID"]);    
+    editData = new EditData(id,"/ipres/json/donnee/getD/",
+    "/ipres/json/donnee/edit/",[],
+    ["caisseID","ipresID"]);
+    alert(id);   
     editData.setForm("form_test");
     document.getElementById('form_test').addEventListener('submit',(e)=>{
         e.preventDefault();
-        editData.submitForm();
+        console.log(editData);
+        alertify.confirm("This is a confirm dialog.",
+            function(){
+                alertify.success('OK');
+                editData.submitForm();
+            },
+            function(){
+                alertify.error('Cancel');
+            });//
     })
   }
     

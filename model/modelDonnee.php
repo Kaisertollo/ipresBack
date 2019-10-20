@@ -41,4 +41,16 @@ function getEncaissementByAnnee($idEmp,$annee)
     global $bd;
     return $bd -> query($sql) -> fetch();
 }
+function getDonnee($id)
+{
+    $sql = "SELECT * from donnees Do WHERE id = $id";
+    global $bd;
+    return $bd -> query($sql) -> fetch(PDO::FETCH_ASSOC);
+}
+function updateDonnee($arr)
+{
+    global $bd;
+    $sql = "UPDATE donnees set annee=$arr[1],somDec=$arr[2],SomEst=$arr[3],encReel=$arr[4],effectif=$arr[5],solde=$arr[6] where id=$arr[0]";
+    return $bd -> exec($sql);
+}
 ?>

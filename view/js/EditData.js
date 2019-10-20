@@ -1,9 +1,10 @@
 export class EditData{
-    constructor(id,url,arr2,arr3){
+    constructor(id,url,url2,arr2,arr3){
         this.form = [];
         this.url = url;
+        this.url2 = url2;
         this.id = id;
-        this.notAllow = ["url","notAllow","typeNumber","id","form",...arr2]
+        this.notAllow = ["url","url2","notAllow","typeNumber","id","form",...arr2]
         this.typeNumber =[...arr3];
         //"/ipres/json/employeur/showById/"
     }
@@ -64,16 +65,16 @@ export class EditData{
         this.form.forEach((item)=>{
             fd.append(item.id,item.value);
         })
-	console.log(this.form);
-        
+	    console.log(this.form);
         request.onload = function(){
             if(this.status == 200){
-               alert("OK");
+                alert("OK");
+                console.log(this.responseText);
             }
-            else
-                console.log(this.error);
+        else
+            console.log(this.error);
         }
-        request.open('POST',"/ipres/json/employeur/edit/"+this.id,true);
+        request.open('POST',this.url2+this.id,true);
         request.send(fd);
     }
 }

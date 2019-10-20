@@ -8,7 +8,8 @@ export class Donnees extends ShowData{
       { title: "encaissement Réel",data:"encReel"},
       { title: "Solde",data:"solde"},
       { title: "Effectif",data:"effectif"},
-      { title: "Anomalies",data:'anomalie',"render":this.renderAnomalie }];
+      { title: "Anomalies",data:'anomalie',"render":this.renderAnomalie },
+      { title: "Editer",data:'id',"render":this.renderEdit }];
       super.initTable(this.columns);
     }
   renderAnomalie ( data, type, row, meta ){
@@ -18,6 +19,10 @@ export class Donnees extends ShowData{
     "<button type='button' class='btn btn-warning'>montant declaration et versement différent </button>",
     "<button type='button' class='btn btn-info'>versement sans declaration</button>"];
     return anomalies[data];
+  }
+  renderEdit(data,type,row,meta){
+    return `<button type='button' class='btn btn-success' 
+    onclick='openM(${data});'>Editer</button>`;
   }
 
 }
