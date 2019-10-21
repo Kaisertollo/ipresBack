@@ -38,7 +38,7 @@ export class Employeurs extends ShowData{
   }
 
 }
-let employeurs = new Employeurs();
+window.employeurs = new Employeurs();
 const agence = document.getElementById("agence");
 const profile = document.getElementById("profil");
 agence.addEventListener("change",()=>employeurs.setAgence(agence.value));

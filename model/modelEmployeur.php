@@ -82,7 +82,7 @@ function setProfil($id,$profil)
 function updateEmployeur($arr)
 {
     global $bd;
-    $sql = "UPDATE employeur set nomEtrp='$arr[1]',ipresID='$arr[2]',caisseID='$arr[3]',communID='$arr[4]',adresse='$arr[5]',profil='$arr[6]' where id=$arr[0]";
+    $sql = "UPDATE employeur set nomEtrp='$arr[1]',ipresID='$arr[2]',caisseID='$arr[3]',communID='$arr[4]',adresse='$arr[5]' where id=$arr[0]";
     return $bd -> exec($sql);
 }
 ?>

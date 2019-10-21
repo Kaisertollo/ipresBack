@@ -68,11 +68,10 @@ export class EditData{
 	    console.log(this.form);
         request.onload = function(){
             if(this.status == 200){
-                alert("OK");
-                console.log(this.responseText);
+                alertify.success('modification ajouté');
             }
-        else
-            console.log(this.error);
+            else
+                console.log(this.error);
         }
         request.open('POST',this.url2+this.id,true);
         request.send(fd);
