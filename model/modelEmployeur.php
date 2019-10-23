@@ -37,12 +37,7 @@ function getEmployeByIdEmployeur($id)
     global $bd;
     return $bd -> query($sql) -> fetchAll(PDO::FETCH_ASSOC);
 }
-function getIdEmployeurByName($nom)
-{
-    $sql = "SELECT id from employeur WHERE nomEtrp = '$nom'";
-    global $bd;
-    return $bd -> query($sql) -> fetch(PDO::FETCH_ASSOC);
-}
+
 function getIdEmployeurById($id)
 {
     $sql = "SELECT * from employeur WHERE id = '$id'";

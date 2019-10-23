@@ -20,7 +20,8 @@ if (isset($_POST['connexion']))
 
 }
 ?>
-/*if ($_POST['ajoutUser']) {
+/*
+if ($_POST['ajoutUser']) {
     extract($_POST);
     if (insererUser($nom, $login, $mdp, $profil) > 0){
         header('location:/ipres/view/indexIpres.php?view=utilisateur&ok=1');

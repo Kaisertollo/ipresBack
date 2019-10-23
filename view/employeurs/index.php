@@ -1,5 +1,11 @@
-<?php include '../header.php'?>
+<?php  
+  include '../header.php';
+  if ($_SESSION['profil'] == 'admin') {
+    # code...
+  
+?>
   <div class="container">
+  
     <div class="form-row">
 	<div class="form-group col-md-6">
       <select  class="form-control" id="agence">
@@ -39,8 +45,12 @@
 	  </table>
   </div>
 
-
-  <?php include '../footer.php'?>
+  <?php
+   }
+   else {
+     header("location:/ipres/accueil");
+   }
+   include '../footer.php'?>
   <?php include 'modalEdit.php'?>
   <script src="/ipres/view/js/Employeurs.js" type="module"></script>
   

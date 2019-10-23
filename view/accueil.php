@@ -12,7 +12,7 @@
 
         <div class="carousel-inner">
           <div class="item active">
-            <img src="/ipres/view/asset/img/slide1.jpg" class="img-responsive" alt="">
+            <img src="/ipres/asset/img/slide1.jpg" class="img-responsive" alt="">
             <div class="carousel-caption">
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
                 <h2><span>Bienvenu dans Ipres</span></h2>
@@ -28,7 +28,7 @@
           </div>
 
           <div class="item">
-            <img src="/ipres/view/asset/img/slide2.jpg" class="img-responsive" alt="">
+            <img src="/ipres/asset/img/slide2.jpg" class="img-responsive" alt="">
             <div class="carousel-caption">
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">
                 <h2>IPRES Sénégal</h2>

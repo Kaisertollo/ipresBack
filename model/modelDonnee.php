@@ -35,6 +35,12 @@ function getLastDonneeByIdEmployeur($idEmp)
     return $bd -> query($sql) -> fetch();
 
 }
+function getIdEmployeurByName($nom)
+{
+    $sql = "SELECT id from employeur WHERE nomEtrp = '$nom'";
+    global $bd;
+    return $bd -> query($sql) -> fetch();
+}
 function getEncaissementByAnnee($idEmp,$annee)
 {
     $sql = "SELECT encReel from donnees Do WHERE Do.annee = '$annee' AND Do.idEmployeur = '$idEmp'";

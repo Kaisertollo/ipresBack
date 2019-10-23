@@ -1,4 +1,10 @@
-
+<?php if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+} ?>
+<?php
+  require_once 'C:\wamp\www/ipres/model/modelDonnee.php';
+  $idEntr = getIdEmployeurByName($_SESSION['nom']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,12 +49,38 @@
               </div>
             </div>
             <div class="menu">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="/ipres/accueil">Accueil</a></li>
+                <?php
+                  if($_SESSION['profil'] == 'admin'){?>
+                    <li role="presentation"><a href="/ipres/employeurs/index/">Employeurs</a></li>
+                    <li role="presentation"><a href="blog.html">Employées</a></li>
+                    <?php
+                    }
+                ?>
+                <?php
+                  if($_SESSION['profil'] == 'employeur'){
+                   echo "<li role='presentation'><a href='/ipres/employeurs/donnees/$idEntr[0]'>Données</a></li><li role='presentation'><a href=#>Employées</a></li>";}
+                ?>    
+                <?php
+                    
+                ?>
+                <?php
+                  if($_SESSION['profil'] == 'employe'){?>
+                    <li role="presentation"><a href="#">Informations</a></li>
+                    <?php
+                    }
+                ?>
+                <li role="presentation"><a href='/ipres/dec.php'>Deconnexion</a></li>
+              </ul>
+            <!--
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="/ipres/accueil">Accueil</a></li>
                 <li role="presentation"><a href="/ipres/employeurs/index/">Employeurs</a></li>
                 <li role="presentation"><a href="blog.html">Employée</a></li>
                 <li role="presentation"><a href='/ipres/dec.php'>Deconnexion</a></li>
               </ul>
+            -->
             </div>
           </div>
         </nav>
